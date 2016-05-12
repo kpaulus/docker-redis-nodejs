@@ -1,0 +1,10 @@
+node:
+  build: .
+  links:
+   - redis
+  ports:
+   - "8080:8080"
+redis:
+  image: redis:latest
+  ports:
+   - "6379:6379"
